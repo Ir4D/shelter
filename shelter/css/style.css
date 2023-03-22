@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+/* ****************************** */
+/* GENERAL REUSABLE STYLES        */
+/* ****************************** */
+
+.content-width {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.link-common {
+  text-decoration: none;
+}
+
+
+/* ****************************** */
+/* HEADER                         */
+/* ****************************** */
+
+.header {
+  display: flex;
+  align-items: center;
+  min-width: 128rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.logo-title {
+  color: #f1cdb3;
+  font-size: 3.2rem;
+  font-family: Georgia;
+  letter-spacing: 0.2rem;
+  line-height: 3.5rem;
+  margin-top: 0.05rem;
+  margin-bottom: 0.9rem;
+  margin-left: 0.03rem;
+}
+
+.logo-subtitle {
+  color: #ffffff;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.13rem;
+  margin-left: 0.4rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 44.24rem;
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin-top: -0.27rem;
+}
+
+.nav-link {
+  text-decoration: underline 0.3rem;
+  text-underline-offset: 0.7rem;
+  text-decoration-color: transparent;
+  transition: all 0.5s ease-out;
+}
+
+.nav-link:link, .nav-link:visited {
+  color: #cdcdcd;
+}
+
+.nav-link:hover, 
+.nav-link:active {
+  cursor: pointer;
+  color: #fafafa;
+  text-decoration-color: #f1cdb3;
+}
