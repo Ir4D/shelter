@@ -92,3 +92,74 @@ body {
   color: #fafafa;
   text-decoration-color: #f1cdb3;
 }
+
+
+/* ****************************** */
+/* SECTION - NOT ONLY             */
+/* ****************************** */
+
+.not-only {
+  background: url(../assets/img/not-only-bg.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  height: 90.8rem;
+  min-width: 128rem;
+  margin: 0 auto;
+  margin-top: -8.91rem;
+}
+
+.not-only-content {
+  display: flex;
+}
+
+.not-only-heading {
+  width: 40rem;
+  padding-top: 34.4rem;
+  margin-left: 0.04rem;
+  color: #ffffff;
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 4.4rem;
+  line-height: 5.7rem;
+}
+
+.not-only-text {
+  width: 46rem;
+  color: #cdcdcd;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin-top: 4.1rem;
+  margin-left: 0.04rem;
+}
+
+.not-only-btn {
+  margin-top: 4.11rem;
+  margin-left: 0.04rem;
+  padding-top: 0.1rem;
+  width: 20.7rem;
+  height: 5.2rem;
+  background-color: #f1cdb3;
+  border-radius: 10rem;
+  border: none;
+  transition: 0.3s;
+}
+
+.not-only-btn:hover {
+  cursor: pointer;
+  background-color: #fddcc4;
+}
+
+.not-only-link {
+  color: #292929;
+  font-family: Georgia;
+  font-size: 1.7rem;
+  line-height: 2.21rem;
+  letter-spacing: 0.099rem;
+}
+
+.not-only-img {
+  width: 69.8rem;
+  height: 72.8rem;
+  margin-top: 18rem;
+  margin-left: 4.26rem;
+  background-image: url("../assets/img/not-only-dog.png");
+}
