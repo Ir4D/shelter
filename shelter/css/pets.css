@@ -116,7 +116,7 @@ body {
 
 
 /* ****************************** */
-/* SECTION - NOT ONLY             */
+/* SECTION - PETS                 */
 /* ****************************** */
 
 .pets {
@@ -217,7 +217,7 @@ body {
   height: 5.2rem;
   margin-top: 3rem;
   margin-left: 0.1rem;
-  padding: 1.25rem 4.25rem;
+  padding: 1.3rem 4.25rem;
   border: 2px solid #f1cdb3;
   border-radius: 10rem;
   background-color: #fafafa;
@@ -392,25 +392,25 @@ body {
 }
 
 .locations-container-boston {
-  margin-top: -0.7rem;
+  margin-top: -0.8rem;
   margin-left: -0.1rem;
 }
 
 .locations-container-london {
-  margin-top: 3.3rem;
+  margin-top: 3.4rem;
   margin-left: -0.1rem;
 }
 
 .locations-icon {
   width: 2.2rem;
   height: 3.2rem;
-  margin-top: -0.25rem;
+  margin-top: -0.1rem;
   margin-left: -0.1rem;
   background: url("../assets/svg/icon-location.svg") no-repeat;
 }
 
 .locations-icon2 {
-  margin-top: -0.1rem;
+  margin-top: -0.3rem;
 }
 
 .locations-text {
