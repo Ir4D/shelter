@@ -501,3 +501,93 @@ body {
 }
 
 
+/* ****************************** */
+/* SECTION - IN-ADDITION          */
+/* ****************************** */
+
+.in-addition {
+  height: 46.2rem;
+  background-color: #f6f6f6;
+}
+
+.in-addition-content {
+  display: flex;
+  padding-top: 9.1rem;
+  justify-content: center;
+  column-gap: 2.9rem;
+}
+
+.in-addition-img {
+  width: 50.5rem;
+  height: 26.1rem;
+  margin-left: 0.3rem;
+  background: url("../assets/img/in-addition-dog.png") no-repeat;
+}
+
+.in-addition-text {
+  display: flex;
+  width: 38rem;
+  margin-top: -1.08rem;
+  margin-left: 0.12rem;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.in-addition-heading {
+  font-family: Georgia;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+  letter-spacing: 0.21rem;
+  color: #545454;
+}
+
+.in-addition-subheading {
+  margin-top: -0.02rem;
+  font-family: Georgia;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  letter-spacing: 0.09rem;
+  color: #545454;
+}
+
+.in-addition-credit-card {
+  display: flex;
+  width: 34.9rem;
+  height: 4.3rem;
+  padding: 1rem 1.47rem;
+  column-gap: 1.5rem;
+  background-color: #f1cdb3;
+  border: none;
+  border-radius: 0.9rem;
+  transition: 0.3s;
+}
+
+.in-addition-credit-card:hover {
+  cursor: pointer;
+  background-color: #fddcc4;
+}
+
+.credit-card-img {
+  width: 3rem;
+  height: 2.3rem;
+  background: url("../assets/svg/credit-card.svg");
+}
+
+.credit-card-number {
+  font-family: Georgia;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.119rem;
+  color: #545454;
+}
+
+.in-addition-legal-info {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-style: italic;
+  color: #b2b2b2;
+}
+
+
