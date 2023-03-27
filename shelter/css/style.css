@@ -396,3 +396,108 @@ body {
   color: #292929;
 }
 
+
+/* ****************************** */
+/* SECTION - HELP                 */
+/* ****************************** */
+
+.help {
+  height: 61.1rem;
+  background-color: #ffffff;
+}
+
+.help-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help-heading {
+  width: 40.25rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+  padding-top: 0.08rem;
+  padding-left: 0.3rem;
+  font-family: Georgia;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+  letter-spacing: 0.21rem;
+  text-align: center;
+  color: #545454;
+}
+
+.help-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 103rem;
+  height: 28.1rem;
+  margin-top: 5.9rem;
+  gap: 11.95rem;
+  row-gap: 5.4rem;
+  justify-content: center;
+}
+
+.help-item {
+  display: flex;
+  height: 11.3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.help-item:nth-child(5n+1) {
+  grid-column: auto / span 5;
+}
+
+.help-icon {
+  width: 6rem;
+  height: 6rem;
+}
+
+.icon-pet-food {
+  background: url("../assets/svg/icon-pet-food.svg") no-repeat;
+}
+
+.icon-transportation {
+  background: url("../assets/svg/icon-transportation.svg") no-repeat;
+}
+
+.icon-toys {
+  background: url("../assets/svg/icon-toys.svg") no-repeat;
+}
+
+.icon-bowls-and-cups {
+  background: url("../assets/svg/icon-bowls-and-cups.svg") no-repeat;
+}
+
+.icon-shampoos {
+  background: url("../assets/svg/icon-shampoos.svg") no-repeat;
+}
+
+.icon-vitamins {
+  background: url("../assets/svg/icon-vitamins.svg") no-repeat;
+}
+
+.icon-medicines {
+  background: url("../assets/svg/icon-medicines.svg") no-repeat;
+}
+
+.icon-collars-leashes {
+  background: url("../assets/svg/icon-collars-leashes.svg") no-repeat;
+}
+
+.icon-sleeping-area {
+  background: url("../assets/svg/icon-sleeping-area.svg") no-repeat;
+}
+
+.help-text {
+  font-family: Georgia;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.27rem;
+  letter-spacing: 0.12rem;
+  color: #545454;
+}
+
+
