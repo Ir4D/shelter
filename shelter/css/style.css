@@ -591,3 +591,126 @@ body {
 }
 
 
+/* ****************************** */
+/* FOOTER                         */
+/* ****************************** */
+
+.footer {
+  min-width: 128rem;
+  height: 35rem;
+  margin: 0 auto;
+  background: url(../assets/img/not-only-bg.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer-content {
+  display: flex;
+  padding-top: 4rem;
+  gap: 16rem;
+}
+
+.footer-contacts {
+  width: 28rem;
+  margin-top: 1.7rem;
+}
+
+.footer-locations {
+  width: 30.2rem;
+  margin-top: 1.7rem;
+}
+
+.footer-title {
+  margin-bottom: 4rem;
+  font-family: Georgia;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+  letter-spacing: 0.21rem;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-text {
+  font-family: Georgia;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  letter-spacing: 0.12rem;
+  color: #f1cdb3;
+}
+
+.contacts-email-container {
+  margin-bottom: 3.98rem;
+}
+
+.contacts-email-icon {
+  width: 4rem;
+  height: 3.2rem;
+  margin-top: -0.1rem;
+  background: url("../assets/svg/icon-email.svg") no-repeat;
+}
+
+.contacts-phone-icon {
+  width: 4rem;
+  height: 3.2rem;
+  background: url("../assets/svg/icon-phone.svg") no-repeat;
+}
+
+.contacts-email-text, 
+.contacts-phone-number {
+  margin-left: 2rem;
+}
+
+.contacts-phone-number {
+  margin-top: 0.08rem;
+}
+
+.email-link, 
+.phone-link {
+  cursor: pointer;
+  color: #f1cdb3;
+}
+
+.locations-title {
+  margin-left: -0.1rem;
+}
+
+.locations-container-boston {
+  margin-top: -0.7rem;
+  margin-left: -0.1rem;
+}
+
+.locations-container-london {
+  margin-top: 3.3rem;
+  margin-left: -0.1rem;
+}
+
+.locations-icon {
+  width: 2.2rem;
+  height: 3.2rem;
+  margin-top: -0.25rem;
+  margin-left: -0.1rem;
+  background: url("../assets/svg/icon-location.svg") no-repeat;
+}
+
+.locations-icon2 {
+  margin-top: -0.1rem;
+}
+
+.locations-text {
+  padding-left: 2rem;
+}
+
+.locations-text a {
+  color: #f1cdb3;
+}
+
+.footer-img {
+  width: 30rem;
+  height: 31rem;
+  margin-left: -0.2rem;
+  background: url("../assets/img/footer-puppy.png") no-repeat;
+}
