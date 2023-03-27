@@ -220,3 +220,179 @@ body {
 }
 
 
+
+/* ****************************** */
+/* SECTION - OUR-FRIENDS          */
+/* ****************************** */
+
+.our-friends {
+  height: 87.7rem;
+  background-color: #f6f6f6;
+}
+
+.our-friends-content {
+  display: flex;
+  padding-top: 8rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-friends-heading {
+  width: 40.25rem;
+  margin: 0 auto;
+  padding-top: 0.1rem;
+  padding-left: 0.21rem;
+  font-family: Georgia;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+  letter-spacing: 0.21rem;
+  text-align: center;
+  color: #545454;
+}
+
+.our-friends-slider {
+  display: flex;
+  height: 43.5rem;
+  margin-top: 5.9rem;
+  align-items: center;
+}
+
+.slider-arrow {
+  width: 5.2rem;
+  height: 5.2rem;
+  padding: 2.3rem 1.9rem;
+  border: 2px solid #f1cdb3;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.slider-arrow:hover {
+  background-color: #fddcc4;
+  border: 2px solid #fddcc4;
+  cursor: pointer;
+}
+
+.arrow-left {
+  background: url("../assets/img/arrow-left.png") no-repeat;
+  background-position: center;
+}
+
+.arrow-right {
+  background: url("../assets/img/arrow-right.png") no-repeat;
+  background-position: center;
+}
+
+.slider {
+  display: flex;
+  margin: 0 5.3rem;
+  gap: 9rem;
+}
+
+.card {
+  display: flex;
+  width: 27rem;
+  height: 43.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.card-img {
+  width: 27rem;
+  height: 27rem;
+}
+
+.card-img-1 {
+  background: url("../assets/img/pets-katrine.png") no-repeat;
+}
+
+.card-img-2 {
+  background: url("../assets/img/pets-jennifer.png") no-repeat;
+}
+
+.card-img-3 {
+  background: url("../assets/img/pets-woody.png") no-repeat;
+}
+
+.card-info {
+  display: flex;
+  height: 16.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-name {
+  margin-top: 3rem;
+  margin-left: 0.25rem;
+  font-family: Georgia;
+  font-size: 2rem;
+  line-height: 2.27rem;
+  letter-spacing: 0.12rem;
+  color: #545454;
+}
+
+.card-btn {
+  width: 18.7rem;
+  height: 5.2rem;
+  margin-top: 3rem;
+  margin-left: 0.1rem;
+  padding: 1.25rem 4.25rem;
+  border: 2px solid #f1cdb3;
+  border-radius: 10rem;
+  background-color: #fafafa;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background-color: #fddcc4;
+  border: 2px solid #fddcc4;
+  cursor: pointer;
+}
+
+.card-link {
+  font-family: Georgia;
+  font-size: 1.7rem;
+  line-height: 2.21rem;
+  letter-spacing: 0.099rem;
+  color: #292929;
+}
+
+.card:hover {
+  background-color: #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover .card-btn {
+  background-color: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+
+.our-friends-btn {
+  width: 26.1rem;
+  height: 5.2rem;
+  margin-top: 6rem;
+  margin-left: 0.1rem;
+  padding: 1.5rem 4.3rem;
+  background-color: #f1cdb3;
+  border: none;
+  border-radius: 10rem;
+  transition: 0.3s;
+}
+
+.our-friends-btn:hover {
+  background-color: #fddcc4;
+  cursor: pointer;
+}
+
+.our-friends-link {
+  padding-left: 0.19rem;
+  font-family: Georgia;
+  font-size: 1.7rem;
+  line-height: 2.21rem;
+  letter-spacing: 0.103rem;
+  color: #292929;
+}
+
