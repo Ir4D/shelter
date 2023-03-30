@@ -321,11 +321,13 @@ section {
   justify-content: space-between;
   align-items: center;
   background-color: #fafafa;
+  border-radius: 0.9rem;
 }
 
 .card-img {
   width: 27rem;
   height: 27rem;
+  border-radius: 0.9rem;
 }
 
 .card-img-1 {

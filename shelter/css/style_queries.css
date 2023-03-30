@@ -1,0 +1,195 @@
+/* ****************************** */
+/* BELOW 1280px (80em)            */
+/* 1280px / 16px = 80             */
+/* ****************************** */
+
+@media (max-width: 80em) {
+
+}
+
+
+
+/* ****************************** */
+/* BELOW 768px (48em)             */
+/* 768px / 16px = 48              */
+/* ****************************** */
+
+@media (max-width: 48em) {
+  /* GENERAL */
+  section {
+    min-width: 76.8rem;
+  }
+  
+  .content-width {
+    width: 70.8rem;
+  }
+
+  /* HEADER */
+  .header {
+    min-width: 76.8rem;
+  }
+
+  /* SECTION - NOT ONLY */
+  .not-only {
+    height: 116.5rem;
+  }
+
+  .not-only-content {
+    width: 56.9rem;
+    flex-direction: column;
+  }
+
+  .not-only-text-container {
+    width: 46rem;
+    margin: 0 auto;
+  }
+
+  .not-only-heading {
+    padding-top: 15.1rem;
+  }
+
+  .not-only-btn {
+    margin-top: 4.2rem;
+    margin-left: 12.6rem;
+  }
+
+  .not-only-img {
+    width: 56.9rem;
+    height: 59.3rem;
+    margin-top: 10rem;
+    margin-left: 6.9rem;
+    background-size: 56.9rem 59.3rem;
+  }
+
+  /* SECTION - ABOUT */
+  .about {
+    height: 104.8rem;
+  }
+
+  .about-content {
+    padding: 0;
+    padding-top: 6.6rem;
+    padding-left: 0.6rem;
+  }
+
+  .about-container {
+    width: 43.7rem;
+    flex-direction: column-reverse;
+    gap: 8rem;
+  }
+
+  .about-img {
+    margin-left: 6.5rem;
+  }
+
+  /* SECTION - OUR-FRIENDS */
+  .our-friends-content {
+    width: 70.8rem;
+  }
+
+  .slider {
+    margin: 0 1.2rem;
+    gap: 4rem;
+  }
+
+  .card:nth-child(3) {
+    display: none;
+  }
+
+  .our-friends-btn {
+    margin-left: 0;
+  }
+
+  /* SECTION - HELP */
+  .help {
+    height: 77.9rem; 
+  }
+
+  .help-content {
+    width: 63rem;
+  }
+
+  .help-list {
+    width: 63rem;
+    gap: 6rem;
+    row-gap: 5.6rem;
+    justify-content: center;
+  }
+
+  .help-item {
+    height: 11.2rem;
+  }
+
+  .help-icon {
+    margin: 0 5.5rem;
+  }
+
+  .help-text {
+    margin-left: 0.1rem;
+  }
+
+  /* SECTION - IN-ADDITION */
+  .in-addition {
+    height: 78.3rem;
+  }
+
+  .in-addition-content {
+    width: 50.5rem;
+    flex-direction: column-reverse;
+    row-gap: 6rem;
+  }
+
+  .in-addition-img {
+    margin-left: -0.1rem;
+  }
+
+  .in-addition-text {
+    margin-left: 6.25rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    min-width: 76.8rem;
+    height: 63.9rem;
+  }
+
+  .footer-content {
+    width: 70.8rem;
+    flex-wrap: wrap;
+    gap: 6rem;
+    padding-top: 3.1rem;
+  }
+
+  .footer-contacts {
+    margin-top: 0;
+    margin-left: 3.4rem;
+  }
+
+  .footer-locations {
+    margin-top: 0;
+  }
+
+  .locations-boston {
+    margin-top: -0.1rem;
+  }
+
+  .locations-container-london {
+    margin-top: 3.4rem;
+  }
+  
+  .footer-img {
+    margin-top: 0.5rem;
+    margin-left: 20.4rem;
+  }
+
+}
+
+
+/* ****************************** */
+/* BELOW 320px (20em)             */
+/* 320px / 16px = 20              */
+/* ****************************** */
+
+@media (max-width: 20em) {
+
+}

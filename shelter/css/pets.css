@@ -156,11 +156,13 @@ body {
   align-items: center;
   background-color: #fafafa;
   transition: all 0.5s;
+  border-radius: 0.9rem;
 }
 
 .card-img {
   width: 27rem;
   height: 27rem;
+  border-radius: 0.9rem;
 }
 
 .card-img-1 {
