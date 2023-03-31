@@ -82,6 +82,10 @@ section {
   color: #ffffff;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .nav-list {
   display: flex;
   width: 44.24rem;
@@ -470,10 +474,6 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.help-item:nth-child(5n+1) {
-  grid-column: auto / span 5;
 }
 
 .help-icon {
