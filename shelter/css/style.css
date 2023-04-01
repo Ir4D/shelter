@@ -189,7 +189,8 @@ section {
   height: 72.8rem;
   margin-top: 18rem;
   margin-left: 4.2rem;
-  background-image: url("../assets/img/not-only-dog.png");
+  background: url("../assets/img/not-only-dog.png") no-repeat;
+  background-size:contain;
 }
 
 
@@ -217,6 +218,7 @@ section {
   width: 30rem;
   height: 40.8rem;
   background: url("../assets/img/about-pets.png") no-repeat;
+  background-size:contain;
 }
 
 .about-text-container {
@@ -548,6 +550,7 @@ section {
   height: 26.1rem;
   margin-left: 0.1rem;
   background: url("../assets/img/in-addition-dog.png") no-repeat;
+  background-size: contain;
 }
 
 .in-addition-text {
@@ -740,4 +743,5 @@ section {
   height: 31rem;
   margin-left: -0.2rem;
   background: url("../assets/img/footer-puppy.png") no-repeat;
+  background-size: contain;
 }

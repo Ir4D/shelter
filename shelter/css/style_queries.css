@@ -1,13 +1,93 @@
 /* ****************************** */
-/* BELOW 1280px (80em)            */
-/* 1280px / 16px = 80             */
+/* BELOW 1279.84px (79.99em)      */
+/* 1279.84px / 16px = 79.99       */
 /* ****************************** */
 
-@media (max-width: 80em) {
+@media (max-width: 79.99em) {
+  /* GENERAL */
+  section {
+    min-width: 95%;
+  }
 
+  .content-width {
+    width: 95%;
+  }
+
+  /* HEADER */
+  .header {
+    min-width: 95%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  /* SECTION - NOT ONLY */
+  .not-only-content {
+    justify-content: space-between;
+  }
+
+  .not-only-heading {
+    width: 26rem;
+  }
+  
+  .not-only-text {
+    width: 35rem;
+  }
+
+  /* SECTION - OUR-FRIENDS */
+  .our-friends-content {
+    width: 95%;
+  }
+
+  .our-friends-slider {
+    min-width: 90%;
+  }
+
+  .slider {
+    width: 100%;
+    gap: normal;
+    justify-content: space-between;
+  }
+
+  .card:nth-child(3) {
+    display: none;
+  }
+
+  /* SECTION - HELP */
+  .help {
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .help-content {
+    width: 100%;
+  }
+
+  .help-list {
+    width: 100%;
+    height: auto;
+    gap: 6rem;
+    row-gap: 5.6rem;
+    justify-content: center;
+  }
+
+  .help-icon {
+    margin: 0 5.5rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    min-width: 95%;
+    height: auto;
+  }
+
+  .footer-content {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 6rem;
+    padding-top: 3.1rem;
+    justify-content: space-evenly;
+  }
 }
-
-
 
 /* ****************************** */
 /* BELOW 768px (48em)             */
@@ -26,7 +106,9 @@
 
   /* HEADER */
   .header {
-    min-width: 76.8rem;
+    max-width: 76.8rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   /* SECTION - NOT ONLY */
@@ -45,7 +127,12 @@
   }
 
   .not-only-heading {
+    width: 40rem;
     padding-top: 15.1rem;
+  }
+
+  .not-only-text {
+    width: 46rem;
   }
 
   .not-only-btn {
@@ -58,7 +145,7 @@
     height: 59.3rem;
     margin-top: 10rem;
     margin-left: 6.9rem;
-    background-size: 56.9rem 59.3rem;
+    background-size:contain;
   }
 
   /* SECTION - ABOUT */
@@ -102,7 +189,8 @@
 
   /* SECTION - HELP */
   .help {
-    height: 77.9rem; 
+    height: 77.9rem;
+    margin-bottom: 0;
   }
 
   .help-content {
@@ -159,6 +247,7 @@
     flex-wrap: wrap;
     gap: 6rem;
     padding-top: 3.1rem;
+    justify-content: normal;
   }
 
   .footer-contacts {
@@ -186,6 +275,228 @@
 
 
 /* ****************************** */
+/* BELOW 767px (47.9375em)        */
+/* 767px / 16px = 47.9375         */
+/* ****************************** */
+
+@media (max-width: 47.9375em) {
+  /* GENERAL */
+  section {
+    min-width: 95%;
+  }
+  
+  .content-width {
+    width: 95%;
+  }
+
+  /* HEADER */
+  .header {
+    max-width: 90%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .nav-list {
+    display: none;
+    overflow: hidden;
+  }
+
+  .burger-menu {
+    display: block;
+    order: 3;
+  }
+
+  .burger-line {
+    display: block;
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.8rem auto;
+    background-color: #f1cdb3;
+  }
+
+  /* SECTION - NOT ONLY */
+  .not-only-content {
+    width: 100%;
+  }
+
+  .not-only-img {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10rem;
+  }
+
+  .not-only-text-container {
+    width: 90%;
+  }
+
+  .not-only-heading {
+    width: 90%;
+  }
+
+  .not-only-text {
+    width: 90%;
+  }
+
+  .not-only-btn {
+    margin: 0 auto;
+    margin-top: 4.2rem;
+  }
+
+  /* SECTION - ABOUT */
+  .about-container {
+    width: 100%;
+  }
+
+  .about-text-container {
+    width: 100%;
+  }
+
+  .about-heading {
+    width: 100%;
+  }
+
+  .about-img {
+    margin: 0 auto;
+  }
+
+  /* SECTION - OUR-FRIENDS */
+  .slider {
+    gap: normal;
+    justify-content: center;
+  }
+
+  .card:nth-child(2) {
+    display: none;
+  }
+
+  /* SECTION - HELP */
+  .help {
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .help-content {
+    width: 100%;
+  }
+
+  .help-heading {
+    width: 100%;
+  }
+
+  .help-list {
+    width: 100%;
+    height: auto;
+    gap: 6rem;
+    row-gap: 5.6rem;
+    justify-content: center;
+  }
+
+  .help-icon {
+    margin: 0 5.5rem;
+  }
+
+  /* SECTION - IN-ADDITION */
+  .in-addition-content {
+    width: 90%;
+  }
+
+  .in-addition-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .in-addition-heading {
+    width: 90%;
+    margin-left: 0.12rem;
+  }
+
+  .in-addition-img {
+    width: 95%;
+  }
+
+  /* FOOTER */
+  .footer {
+    min-width: 95%;
+    height: auto;
+  }
+
+  .footer-contacts,
+  .footer-locations {
+    margin: 0 auto;
+  }
+
+  .footer-img {
+    margin: 0 auto;
+  }
+}
+
+
+/* ****************************** */
+/* BELOW 560px (35em)             */
+/* 560px / 16px = 35              */
+/* ****************************** */
+
+@media (max-width: 35em) {
+  /* SECTION - OUR-FRIENDS */
+  .our-friends {
+    height: auto;
+  }
+
+  .our-friends-heading {
+    width: 90%;
+  }
+
+  .our-friends-slider {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .arrow-left {
+    order: 2;
+  }
+
+  .slider {
+    order: 1;
+    gap: 0rem;
+    margin-top: 2.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .arrow-right {
+    order: 3;
+    margin-left: 8rem;
+  }
+
+  .card-btn {
+    margin-top: 3.1rem;
+  }
+
+  .our-friends-btn {
+    margin-top: 12rem;
+    margin-bottom: 6rem;
+  }
+
+
+  /* SECTION - IN-ADDITION */
+  .in-addition-heading {
+    text-align: center;
+  }
+
+  .in-addition-credit-card {
+    width: 28.1rem;
+    height: 4.3rem;
+    margin: 0 auto;
+  }
+
+  .credit-card-number {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.09rem;
+  }
+}
+
+
+/* ****************************** */
 /* BELOW 320px (20em)             */
 /* 320px / 16px = 20              */
 /* ****************************** */
@@ -197,16 +508,18 @@
   }
 
   .content-width {
-    width: 30rem;
+    min-width: 30rem;
   }
 
   /* HEADER */
   .header {
     min-width: 28rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .logo-container {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 
   .nav-list {
@@ -215,7 +528,8 @@
 
   .burger-menu {
     display: block;
-    margin-left: 5.4rem;
+    margin-left: 6.4rem;
+    order: unset;
   }
 
   .burger-line {
@@ -258,7 +572,7 @@
     width: 26rem;
     height: 27.177rem;
     margin-top: 10.53rem;
-    margin-left: 3.98rem;
+    margin-left: 4.98rem;
     background-size: 26rem 27.177rem;
   }
 
@@ -366,10 +680,10 @@
     margin-top: 6.3rem;
   }
 
-
   /* SECTION - HELP */
   .help {
     height: 74.5rem; 
+    margin-bottom: 0;
   }
 
   .help-content {
@@ -442,6 +756,7 @@
   }
 
   .in-addition-heading {
+    margin-left: 1.58rem;
     font-size: 2.5rem;
     line-height: 3.25rem;
     letter-spacing: 0.15rem;
@@ -533,5 +848,4 @@
     margin: 0 auto;
     background-size: 26reM 26.9rem;
   }
-
 }
