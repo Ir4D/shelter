@@ -72,7 +72,7 @@
 
   /* FOOTER */
   .footer {
-    min-width: 95%;
+    max-width: 95%;
     height: auto;
   }
 
@@ -842,6 +842,6 @@
     width: 26rem;
     height: 26.9rem;
     margin: 0 auto;
-    background-size: 26reM 26.9rem;
+    background-size: 26rem 26.9rem;
   }
 }

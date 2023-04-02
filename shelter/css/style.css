@@ -330,7 +330,8 @@ body {
 .card-img {
   width: 27rem;
   height: 27rem;
-  border-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+  border-top-left-radius: 0.9rem;
 }
 
 .card-img-1 {

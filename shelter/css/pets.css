@@ -36,7 +36,8 @@ body {
 
 .header {
   display: flex;
-  min-width: 128rem;
+  max-width: 128rem;
+  margin: 0 auto;
   height: 12rem;
   background-color: #ffffff;
   align-items: center;
@@ -120,7 +121,7 @@ body {
 /* ****************************** */
 
 .pets {
-  min-width: 128rem;
+  /* max-width: 128rem; */
   height: 134.2rem;
   margin: 0 auto;
   background-color: #f6f6f6;
@@ -162,7 +163,8 @@ body {
 .card-img {
   width: 27rem;
   height: 27rem;
-  border-radius: 0.9rem;
+  border-top-right-radius: 0.9rem;
+  border-top-left-radius: 0.9rem;
 }
 
 .card-img-1 {
@@ -311,7 +313,6 @@ body {
 /* ****************************** */
 
 .footer {
-  min-width: 128rem;
   height: 35rem;
   margin: 0 auto;
   background: url(../assets/img/not-only-bg.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
