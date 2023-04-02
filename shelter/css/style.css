@@ -157,7 +157,7 @@ body {
 }
 
 .not-only-btn {
-  width: 20.7rem;
+  max-width: 20.7rem;
   height: 5.2rem;
   margin-top: 4.2rem;
   margin-left: 0.01rem;
@@ -188,6 +188,7 @@ body {
   margin-left: 4.2rem;
   background: url("../assets/img/not-only-dog.png") no-repeat;
   background-size:contain;
+  background-position: center;
 }
 
 
