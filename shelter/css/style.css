@@ -126,6 +126,7 @@ body {
 /* ****************************** */
 
 .not-only {
+  position: relative;
   height: 90.8rem;
   margin-top: -9rem;
   background: url(../assets/img/not-only-bg.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
@@ -133,6 +134,7 @@ body {
 
 .not-only-content {
   display: flex;
+  justify-content: space-between;
 }
 
 .not-only-heading {
@@ -182,13 +184,26 @@ body {
 }
 
 .not-only-img {
-  width: 69.8rem;
-  height: 72.8rem;
-  margin-top: 18rem;
+  width: 100%;
   margin-left: 4.2rem;
-  background: url("../assets/img/not-only-dog.png") no-repeat;
-  background-size:contain;
-  background-position: center;
+  object-fit: cover;
+  vertical-align: baseline;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.not-only-img img {
+  width: 100%;
+  max-width: 69.8rem;
+  max-height: 72.8rem;
+  height: auto;
+  object-fit: contain;
+  vertical-align: baseline;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  object-position: bottom;
+  position: absolute;
+  bottom: 0;
 }
 
 

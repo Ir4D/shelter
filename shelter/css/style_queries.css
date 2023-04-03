@@ -18,7 +18,7 @@
 
   /* SECTION - NOT ONLY */
   .not-only {
-    height: auto;
+    height: 70rem;
   }
 
   .not-only-content {
@@ -26,12 +26,16 @@
   }
 
   .not-only-heading {
-    width: 26rem;
     padding-top: 20rem;
   }
-  
-  .not-only-text {
-    width: 35rem;
+
+  .not-only-img {
+    margin-left: 2rem;
+  }
+
+  .not-only-img img {
+    max-width: 50rem;
+    justify-self: flex-end;
   }
 
   /* SECTION - OUR-FRIENDS */
@@ -98,16 +102,36 @@
 @media (max-width: 66em) {
   /* SECTION - NOT ONLY */
   .not-only {
-    height: 80rem;
+    height: 60rem;
   }
 
   .not-only-text {
-    width: 26rem;
+    width: 30rem;
   }
 
-  .not-only-img {
-    height: 62rem;
-    background-position: bottom;
+  .not-only-img img {
+    max-width: 40rem;
+  }
+}
+
+
+/* ****************************** */
+/* BELOW 928px (58em)            */
+/* 928px / 16px = 66             */
+/* ****************************** */
+
+@media (max-width: 58em) {
+  /* SECTION - NOT ONLY */
+  .not-only {
+    height: 60rem;
+  }
+
+  .not-only-text {
+    width: 30rem;
+  }
+
+  .not-only-img img {
+    max-width: 30rem;
   }
 }
 
@@ -163,12 +187,10 @@
     margin-left: 12.6rem;
   }
 
-  .not-only-img {
-    width: 56.9rem;
-    height: 59.3rem;
-    margin-top: 10rem;
-    margin-left: 6.9rem;
-    background-size:contain;
+  .not-only-img img {
+    max-width: 56.9rem;
+    max-height: 59.3rem;
+    margin-left: 4.9rem;
   }
 
   /* SECTION - ABOUT */
@@ -334,15 +356,13 @@
   }
 
   /* SECTION - NOT ONLY */
-  
   .not-only-content {
     width: 100%;
   }
 
-  .not-only-img {
+  .not-only-img img {
     width: 80%;
-    margin: 0 auto;
-    margin-top: 10rem;
+    margin-left: 1rem;
   }
 
   .not-only-text-container {
@@ -462,11 +482,6 @@
     height: 108.55rem;
   }
 
-  .not-only-img {
-    margin-top: 2rem;
-    background-position: center;
-  }
-
   /* SECTION - OUR-FRIENDS */
   .our-friends {
     height: auto;
@@ -505,7 +520,6 @@
     margin-top: 12rem;
     margin-bottom: 6rem;
   }
-
 
   /* SECTION - IN-ADDITION */
   .in-addition-heading {
@@ -598,12 +612,11 @@
     margin-left: 4.6rem;
   }
 
-  .not-only-img {
-    width: 26rem;
-    height: 27.177rem;
-    margin-top: 10.53rem;
-    margin-left: 4.98rem;
-    background-size: 26rem 27.177rem;
+  .not-only-img img {
+    width: 100%;
+    max-width: 26rem;
+    max-height: 27.177rem;
+    margin-left: 3rem;
   }
 
   /* SECTION - ABOUT */
