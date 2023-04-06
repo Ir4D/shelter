@@ -164,6 +164,10 @@
     width: 95%;
   }
 
+  body.no-scroll {
+    overflow: hidden;
+  }
+
   /* HEADER */
   .header {
     max-width: 90%;
@@ -171,12 +175,16 @@
     margin-right: 1rem;
   }
 
+  .overlay.visible {
+    visibility: visible;
+  }
+
   .burger-menu {
     display: block;
     order: 3;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    z-index: 9999;
+    z-index: 12;
   }
 
   .burger-line {
@@ -185,6 +193,7 @@
     height: 0.2rem;
     margin: 0.8rem auto;
     background-color: #000000;
+    z-index: 12;
   }
 
   .burger-menu.active {
@@ -323,10 +332,6 @@
 
   .navbar {
     max-width: 32rem;
-  }
-
-  .nav-list {
-    display: none;
   }
 
   .burger-menu {

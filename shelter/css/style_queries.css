@@ -102,7 +102,7 @@
 @media (max-width: 66em) {
   /* SECTION - NOT ONLY */
   .not-only {
-    height: 60rem;
+    height: 70rem;
   }
 
   .not-only-text {
@@ -123,7 +123,7 @@
 @media (max-width: 58em) {
   /* SECTION - NOT ONLY */
   .not-only {
-    height: 60rem;
+    height: 70rem;
   }
 
   .not-only-text {
@@ -175,7 +175,7 @@
 
   .not-only-heading {
     width: 40rem;
-    padding-top: 15.1rem;
+    padding-top: 6.1rem;
   }
 
   .not-only-text {
@@ -313,7 +313,7 @@
   }
   
   .footer-img {
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
     margin-left: 20.4rem;
   }
 }
@@ -330,6 +330,10 @@
     width: 95%;
   }
 
+  body.no-scroll {
+    overflow: hidden;
+  }
+
   /* HEADER */
   .header {
     max-width: 90%;
@@ -337,12 +341,16 @@
     margin-right: 1rem;
   }
 
+  .overlay.visible {
+    visibility: visible;
+  }
+
   .burger-menu {
     display: block;
     order: 3;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-    z-index: 9999;
+    z-index: 12;
   }
 
   .burger-line {
@@ -351,11 +359,12 @@
     height: 0.2rem;
     margin: 0.8rem auto;
     background-color: #f1cdb3;
+    z-index: 12;
   }
 
   .burger-menu.active {
-    margin-right: 0.4rem;
     transform: rotate(90deg);
+    margin-right: 0.3rem;
   }
   
   .nav-container {
@@ -369,6 +378,7 @@
     background-color: #292929;
     transition: 0.6s;
     align-items: center;
+    z-index: 11;
   }
 
   .nav-list {
@@ -592,6 +602,7 @@
 
   /* HEADER */
   .header {
+    height: 6rem;
     max-width: 32rem;
     margin-left: 0;
     margin-right: 0;
@@ -603,16 +614,18 @@
 
   .navbar {
     max-width: 32rem;
-  }
-
-  .nav-list {
-    display: none;
+    margin-top: 0;
   }
 
   .burger-menu {
     display: block;
-    margin-left: 5.2rem;
+    margin-right: 1.2rem;
     order: unset;
+  }
+
+  .burger-menu.active {
+    transform: rotate(90deg);
+    margin-right: 1.3rem;
   }
 
   .burger-line {
@@ -626,6 +639,7 @@
   /* SECTION - NOT ONLY */
   .not-only {
     height: 82.3rem;
+    padding-top: 3rem;
   }
 
   .not-only-text-container {
@@ -635,7 +649,7 @@
   .not-only-heading {
     width: 22rem;
     margin-left: 4.07rem;
-    padding-top: 15rem;
+    padding-top: 6rem;
     font-size: 2.5rem;
     line-height: 3.25rem;
     letter-spacing: 0.15rem;
@@ -666,7 +680,7 @@
   .about-content {
     width: 30rem;
     padding: 0;
-    padding-top: 4.2rem;
+    padding-top: 4.1rem;
     padding-left: 0.1rem;
   }
 
@@ -928,6 +942,7 @@
     width: 26rem;
     height: 26.9rem;
     margin: 0 auto;
+    margin-top: -0.1rem;
     background-size: 26rem 26.9rem;
   }
 }

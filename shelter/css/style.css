@@ -13,6 +13,19 @@ body {
   font-family: Arial;
   font-weight: 400;
   min-height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.6);
+  overflow: hidden;
+  z-index: 10;
+  visibility: hidden;
 }
 
 
@@ -37,6 +50,7 @@ body {
 .header {
   display: flex;
   max-width: 128rem;
+  height: 6rem;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -44,10 +58,9 @@ body {
 
 .navbar {
   display: flex;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   justify-content: space-between;
   align-items: center;
-  z-index: 999;
 }
 
 .logo-title {
@@ -81,6 +94,15 @@ body {
 
 .burger-menu {
   display: none;
+  z-index: 12;
+}
+
+.burger-line {
+  z-index: 12;
+}
+
+.nav-container {
+  z-index: 11;
 }
 
 .nav-list {
@@ -128,7 +150,8 @@ body {
 .not-only {
   position: relative;
   height: 90.8rem;
-  margin-top: -9rem;
+  padding-top: 3rem;
+  /* margin-top: -9rem; */
   background: url(../assets/img/not-only-bg.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
@@ -140,7 +163,7 @@ body {
 .not-only-heading {
   width: 40rem;
   margin-left: 0.02rem;
-  padding-top: 34.4rem;
+  padding-top: 25.4rem;
   font-family: Georgia;
   font-size: 4.4rem;
   font-weight: 400;
