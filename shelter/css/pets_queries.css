@@ -171,14 +171,12 @@
     margin-right: 1rem;
   }
 
-  .nav-list {
-    display: none;
-    overflow: hidden;
-  }
-
   .burger-menu {
     display: block;
     order: 3;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
   }
 
   .burger-line {
@@ -187,6 +185,72 @@
     height: 0.2rem;
     margin: 0.8rem auto;
     background-color: #000000;
+  }
+
+  .burger-menu.active {
+    margin-right: 0.4rem;
+    transform: rotate(90deg);
+  }
+
+  .burger-menu.active .burger-line {
+    background-color: #f1cdb3;
+  }
+  
+  .nav-container {
+    display: flex;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 32rem;
+    height: 100%;
+    min-height: 50rem;
+    background-color: #292929;
+    transition: 0.6s;
+    align-items: center;
+  }
+
+  .nav-container.active {
+    right: 0;
+  }
+
+  .nav-container.active .nav-link:link, 
+  .nav-container.active .nav-link:visited {
+    color: #cdcdcd;
+  }
+
+
+  .nav-container.active .nav-link.active {
+    color: #fafafa;
+    text-decoration-color: #f1cdb3;
+  }
+  
+  .nav-container.active .nav-link:hover.active {
+    cursor: default;
+  }
+  
+  .nav-container.active .nav-link:hover, 
+  .nav-container.active .nav-link:active {
+    color: #fafafa;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    gap: 4rem;
+    width: 32rem;
+    height: 32.7rem;
+    flex-direction: column;
+    font-size: 3.2rem;
+    line-height: 5.21rem;
+    letter-spacing: 0rem;
+    margin: 0;
+    transition: 0.6s;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .nav-link {
+    display: inline-block;
+    text-underline-offset: 1.4rem;
   }
 
   /* SECTION - PETS */
