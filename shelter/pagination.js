@@ -72,6 +72,35 @@ function setCards(cardsArr) {
   }
 }
 
+function setCardsResize(cardsArr) {
+  if (cardsContainer.length < pageLimit) {
+    for (let i = cardsContainer.length; i < pageLimit; i++) {
+      let card = document.createElement("div");
+      card.classList.add("card");
+      const petNumber = cardsArr[i];
+      function createCard(data) {
+        card.innerHTML = `
+            <div class="card-img card-img-${petNumber}"></div>
+            <div class="card-info">
+              <div class="card-name">${data[petNumber].name}</div>
+              <div class="card-btn">
+                <a class="link-common card-link" href="#">Learn more</a>
+              </div>
+            </div>
+        `
+      }
+      function getData(url, cb) {
+        fetch(url)
+          .then(response => response.json())
+          .then(result => cb(result));
+      }
+      getData("./pets.json", (data) => {
+        createCard(data);
+      })
+      cardsContainer.appendChild(card);
+    }
+  }
+}
 
 const cardsContainer = document.querySelector("#cards-container");
 const cardsNavigation = document.querySelector("#cards-navigation");
@@ -81,11 +110,54 @@ const lastArrow = document.querySelector("#last-arrow");
 const prevArrow = document.querySelector("#prev-arrow");
 const firstArrow = document.querySelector("#first-arrow");
 
-let pageLimit = 8;
-let pageCount = 6;
+let pageLimit;
+let pageCount;
 let currentPage;
 let pageNumber;
+let currentArr;
 
+
+if (document.documentElement.clientWidth >= 1280) {
+  pageLimit = 8;
+  pageCount = 6;
+  currentArr = arrByEight;
+} else if (document.documentElement.clientWidth >= 625 && document.documentElement.clientWidth <= 1279) {
+  pageLimit = 6;
+  pageCount = 8;
+  currentArr = arrBySix;
+} else if (document.documentElement.clientWidth <= 624) {
+  pageLimit = 3;
+  pageCount = 16;
+  currentArr = arrByThree;
+}
+
+window.addEventListener('resize', function(event) {
+  if (document.documentElement.clientWidth >= 1280) {
+    pageLimit = 8;
+    pageCount = 6;
+    currentArr = arrByEight;
+    pageNumber = 1;
+    currentPage = 0;
+    setPageNumber(1);
+    setCurrentPage(0);
+  } else if (document.documentElement.clientWidth >= 625) {
+    pageLimit = 6;
+    pageCount = 8;
+    currentArr = arrBySix;
+    pageNumber = 1;
+    currentPage = 0;
+    setPageNumber(1);
+    setCurrentPage(0);
+  } else if (document.documentElement.clientWidth <= 624) {
+    pageLimit = 3;
+    pageCount = 16;
+    currentArr = arrByThree;
+    pageNumber = 1;
+    currentPage = 0;
+    setPageNumber(1);
+    setCurrentPage(0);
+  }
+}, true);
 
 const setPageNumber = (pageNum) => {
   pageNumber = pageNum;
@@ -99,7 +171,7 @@ const setPageNumber = (pageNum) => {
     lastArrow.classList.add("normal");
     prevArrow.classList.remove("normal");
     firstArrow.classList.remove("normal");
-  } else if (pageNumber === 6) {
+  } else if (pageNumber === pageCount) {
     nextArrow.classList.add("inactive");
     lastArrow.classList.add("inactive");
     prevArrow.classList.remove("inactive");
@@ -108,7 +180,7 @@ const setPageNumber = (pageNum) => {
     firstArrow.classList.add("normal");
     nextArrow.classList.remove("normal");
     lastArrow.classList.remove("normal");
-  } else if (pageNumber > 1 || pageNumber < 6) {
+  } else if (pageNumber > 1 || pageNumber < pageCount) {
     prevArrow.classList.add("normal");
     prevArrow.classList.remove("inactive");
     firstArrow.classList.add("normal");
@@ -123,7 +195,7 @@ const setPageNumber = (pageNum) => {
 const setCurrentPage = (currentNum) => {
   currentPage = currentNum;
   cardsContainer.innerHTML = "";
-  setCards(arrByEight[currentPage]);
+  setCards(currentArr[currentPage]);
 };
 
 setPageNumber(1);
