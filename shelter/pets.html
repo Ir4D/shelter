@@ -39,8 +39,9 @@
           Our friends who <br>
           are looking for a house
         </h1>
-        <div class="cards-container">
-          <div class="card">
+        <div class="cards-container" id="cards-container">
+
+          <!-- <div class="card">
             <div class="card-img card-img-1"></div>
             <div class="card-info">
               <div class="card-name">Katrine</div>
@@ -111,14 +112,14 @@
                 <a class="link-common card-link" href="#">Learn more</a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
-        <div class="cards-navigation">
-          <div class="cards-arrow arrow-1 inactive">&lt;&lt;</div>
-          <div class="cards-arrow arrow-2 inactive">&lt;</div>
-          <div class="cards-arrow arrow-3 active">1</div>
-          <div class="cards-arrow arrow-4 normal">&gt;</div>
-          <div class="cards-arrow arrow-5 normal">&gt;&gt;</div>
+        <div class="cards-navigation" id="cards-navigation">
+          <div class="cards-arrow arrow-1 first-arrow" id="first-arrow">&lt;&lt;</div>
+          <div class="cards-arrow arrow-2 prev-arrow" id="prev-arrow">&lt;</div>
+          <div class="cards-arrow arrow-3 current-arrow" id="current-arrow"></div>
+          <div class="cards-arrow arrow-4 next-arrow" id="next-arrow">&gt;</div>
+          <div class="cards-arrow arrow-5 last-arrow" id="last-arrow">&gt;&gt;</div>
         </div>
       </div>
     </div>
@@ -163,5 +164,6 @@
     </div>
   </footer>
   <script src="./script.js"></script>
+  <script src="./pagination.js"></script>
 </body>
 </html>
