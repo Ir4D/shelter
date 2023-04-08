@@ -7,6 +7,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/style_queries.css">
+  <link rel="stylesheet" href="./css/slider-animation.css">
   <title>Cozy House</title>
 </head>
 <body>
@@ -70,37 +71,19 @@
         <h3 class="our-friends-heading">Our friends who <br> 
         are looking for a house</h3>
         <div class="our-friends-slider">
-          <div class="slider-arrow arrow-left"></div>
-          <div class="slider">
-            <div class="card">
-              <div class="card-img card-img-1"></div>
-              <div class="card-info">
-                <div class="card-name">Katrine</div>
-                <div class="card-btn">
-                  <a class="link-common card-link" href="#">Learn more</a>
-                </div>
+          <div class="slider-arrow arrow-left" id="arrow-left"></div>
+          <div class="slider-wrapper">
+            <div class="slider" id="slider">
+              <div class="slider-item slider-prev" id="slider-prev">
               </div>
-            </div>
-            <div class="card">
-              <div class="card-img card-img-2"></div>
-              <div class="card-info">
-                <div class="card-name">Jennifer</div>
-                <div class="card-btn">
-                  <a class="link-common card-link" href="#">Learn more</a>
-                </div>
+              <div class="slider-item slider-current" id="slider-current">
               </div>
-            </div>
-            <div class="card">
-              <div class="card-img card-img-3"></div>
-              <div class="card-info">
-                <div class="card-name">Woody</div>
-                <div class="card-btn">
-                  <a class="link-common card-link" href="#">Learn more</a>
-                </div>
+              <div class="slider-item slider-next" id="slider-next">
               </div>
             </div>
           </div>
-          <div class="slider-arrow arrow-right"></div>
+          <div class="break"></div>
+          <div class="slider-arrow arrow-right" id="arrow-right"></div>
         </div>
         <div class="our-friends-btn">
           <a class="link-common our-friends-link" href="./pets.html">Get to know the rest</a>
