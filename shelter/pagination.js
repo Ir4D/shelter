@@ -48,6 +48,7 @@ function setCards(cardsArr) {
   for (let i = 0; i < pageLimit; i++) {
     let card = document.createElement("div");
     card.classList.add("card");
+    card.id = `${cardsArr[i]}`;
     const petNumber = cardsArr[i];
     function createCard(data) {
       card.innerHTML = `
@@ -77,15 +78,14 @@ function setCardsResize(cardsArr) {
     for (let i = cardsContainer.length; i < pageLimit; i++) {
       let card = document.createElement("div");
       card.classList.add("card");
+      card.id = `${cardsArr[i]}`;
       const petNumber = cardsArr[i];
       function createCard(data) {
         card.innerHTML = `
             <div class="card-img card-img-${petNumber}"></div>
             <div class="card-info">
               <div class="card-name">${data[petNumber].name}</div>
-              <div class="card-btn">
-                <a class="link-common card-link" href="#">Learn more</a>
-              </div>
+              <div class="card-btn link-common card-link">Learn more</div>
             </div>
         `
       }

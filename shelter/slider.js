@@ -50,15 +50,14 @@ function setCardsSlider(cardSlider, cardArr) {
   for (let i = 0; i < cardsNumber; i++) {
     let card = document.createElement("div");
     card.classList.add("card");
+    card.id = `${cardArr[i]}`;
     const petNumber = cardArr[i];
     function createCard(data) {
       card.innerHTML = `
           <div class="card-img card-img-${petNumber}"></div>
           <div class="card-info">
             <div class="card-name">${data[petNumber].name}</div>
-            <div class="card-btn">
-              <a class="link-common card-link" href="#">Learn more</a>
-            </div>
+            <div class="card-btn link-common card-link">Learn more</div>
           </div>
       `
     }

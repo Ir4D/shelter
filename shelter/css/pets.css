@@ -252,6 +252,7 @@ body {
   border-radius: 10rem;
   background-color: #fafafa;
   transition: 0.5s;
+  pointer-events: none;
 }
 
 .card-btn:hover {
@@ -316,22 +317,11 @@ body {
   cursor: pointer;
 }
 
-/* .arrow-1,
-.arrow-2 {
-  border-color: #cdcdcd;
-} */
-
 .arrow-3 {
   border-color: #f1cdb3;
   background-color: #f1cdb3;
   color: #292929;
 }
-
-/* .arrow-4,
-.arrow-5 {
-  border-color: #f1cdb3;
-  color: #292929;
-} */
 
 .cards-arrow.normal {
   border-color: #f1cdb3;

@@ -426,7 +426,7 @@
   .nav-container {
     display: flex;
     position: fixed;
-    right: -100%;
+    right: -200%;
     top: 0;
     width: 32rem;
     height: 100%;

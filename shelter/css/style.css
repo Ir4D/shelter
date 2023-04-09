@@ -468,6 +468,7 @@ body {
   border-radius: 10rem;
   background-color: #fafafa;
   transition: 0.3s;
+  pointer-events: none;
 }
 
 .card-btn:hover {
