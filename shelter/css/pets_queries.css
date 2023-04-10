@@ -170,7 +170,7 @@
 
   /* HEADER */
   .header {
-    max-width: 90%;
+    max-width: 95%;
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -183,7 +183,7 @@
     display: block;
     order: 3;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease;
     z-index: 12;
   }
 
@@ -199,6 +199,7 @@
   .burger-menu.active {
     margin-right: 0.4rem;
     transform: rotate(90deg);
+    transition: all 0.5s ease-in-out;
   }
 
   .burger-menu.active .burger-line {
@@ -208,18 +209,19 @@
   .nav-container {
     display: flex;
     position: fixed;
-    right: -200%;
+    right: -150%;
     top: 0;
     width: 32rem;
     height: 100%;
     min-height: 50rem;
     background-color: #292929;
-    transition: 0.6s;
     align-items: center;
+    transition: 1s ease-out;
   }
 
   .nav-container.active {
     right: 0;
+    transition: all 1s ease-in-out;
   }
 
   .nav-container.active .nav-link:link, 
